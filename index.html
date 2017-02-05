@@ -1,0 +1,484 @@
+<html>
+<head>
+
+<title>Fort Gallica</title>
+
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+<meta charset="UTF-8">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body id="backgroundImage">
+
+<div class="soundcloud">
+  <iframe width="80px" height="80px" underlayDiving="no`" frameborder="yes"
+  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/268322124%3Fsecret_token%3Ds-vBfn6&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true">
+  </iframe>
+</div>
+<div class="facebookButton"><a href="https://www.facebook.com/FortGallica/"><i class="fa fa-facebook-square fa-5x fa-bg" aria-hidden="false" style="color:#FFFFFF"></i></a></div>
+
+<div class="fortGallicaDiv">
+
+<p>
+<img class="fglogo" src="assets/image/logo.png" width="100%"></img>
+</p>
+
+<div class="arrowDiv">
+
+<div onclick="" style="cursor: pointer;" class="downArrow"></div></a>
+
+</div>
+</div description="About Us">
+
+  <div id="2" class="nelsonDiv">
+
+  </div>
+
+  <div id="3" class="underlayDiv">
+
+    <div class="descriptionDiv">
+
+      <!-------------------------------------->
+      <!--This is where the description goes-->
+      <!-------------------------------------->
+
+      <p>Fort Gallica is an art collective</p>
+      <p>organizing shows, and promoting</p>
+      <p>beautiful music in the</p>
+      <p>San Francisco Bay Area</p>
+
+    </div>
+
+  </div>
+
+  <div id="4" class="timmyDiv">
+
+  </div>
+
+  <div id="5" class="upcomingEvents">
+
+    <!------------------------------------>
+    <!--This is where the event links go-->
+    <!------------------------------------>
+    <p><span>Upcoming Events</span></p>
+    <a href = "https://www.facebook.com/events/590159141161372/"><div class="eventsList">5/4/1993 - Guild Theater, Menlo Park</div></a>
+    <a href = "https://www.facebook.com/events/590159141161372/"><div class="eventsList">5/4/1993 - Honey Hive, San Francisco</div></a>
+    <div class="eventsList">TBA</div>
+
+  </div>
+
+  <div id="sixth" class="groupDiv">
+
+  </div>
+
+  <div id="seventh" class="underlayDiv">
+
+  <div description="Container For Artists" class="artistBubblesContainer">
+  <ul>
+    <img src='assets/image/artists/chrononaut.jpg' class='artistBubbles'>
+    <img src='assets/image/artists/tiredchild.jpg' class='artistBubbles'>
+    <img src='assets/image/artists/underbelly.jpg' class='artistBubbles'>
+    <img src='assets/image/artists/underbelly.jpg' class='artistBubbles'>
+  </ul>
+  </div>
+
+  </div>
+
+<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+<style>
+
+#preload {
+
+  display: none;
+
+}
+.eventsList{
+
+  width: 100%;
+  height: 10vh;
+  padding-top: 100px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  font-size: 5vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-bottom: 10px;
+  background-position center;
+  background-size: 90%;
+  text-align: center;
+  color:white
+
+}
+.eventsList:hover{
+
+  background-color: rgba(0, 0, 0, 0.6);
+
+}
+.event{
+  padding-top: 50%;
+
+}
+.day{
+
+  background-color: green;
+  width: 90%;
+  height: 10vw;
+  opacity: 10%;
+
+}
+.soundcloud{
+
+    position:fixed;
+    margin-top: 0px;
+    z-index: 1;
+
+}
+.soundcloudMove{
+
+    width: 300px;
+    height: 100px;
+
+}
+.facebookButton{
+
+  text-align: center;
+
+}
+.fglogo{
+
+	position: relative;
+  margin-top: 20vh;
+	max-width: 1400px;
+  text-align: center;
+
+}
+@keyframes pulse {
+
+  0% {
+  	opacity: 0.5;
+  }
+  50% {
+  	opacity: 1;
+  }
+  100%{
+	opacity: 0.5;
+  }
+
+}
+.downArrow {
+
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #fff;
+  animation: pulse 1s infinite;
+  margin-left: 48%;
+  margin-top: 50px;
+  position: fixed;
+  bottom: 50px;
+  z-index: 1;
+
+}
+.arrowDivOverlay{
+
+  width: 100%;
+  padding-top: 70vh;
+
+}
+.fa-bg {
+
+	position: center;
+	border-radius: 10%;
+	height: 55px;
+	width: 55px;
+	line-height: 56px;
+	margin-top: 20px;
+	transition: all 0.2s ease-in-out;
+
+}
+.fa-bg:hover {
+
+	opacity: .9;
+
+}
+
+.artistBubblesContainer{
+
+  margin-top: 25%;
+  text-align: center;
+
+}
+.artistBubbles{
+
+  border-radius: 50%;
+  width: 25%;
+  height: auto;
+  align-self: right;
+  margin-left: 0px;
+  margin-bottom: 0%;
+
+}
+.artistBubbles hover{
+
+  background-color: black;
+
+}
+.tba{
+
+  font-size: 50px;
+  background-color: black;
+  opacity: 0.6;
+
+}
+p {
+
+  line-height: 100px;
+
+}
+body {
+
+	background-color: black;
+	background-image: url('assets/image/a.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	transition: all 0.5s ease-in-out;
+
+}
+.bg2{
+
+  background-image: url('assets/image/b.jpg');
+
+}
+.bg3{
+
+  background-image: url('assets/image/c.jpg');
+
+}
+.bg4{
+
+  background-image: url('assets/image/d.jpg');
+
+}
+.container {
+
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+.textDiv {
+
+  margin-left: 10px;
+  margin-right: 10px;
+  opacity: 0.9;
+  text-align: center;
+
+}
+.fortGallicaDiv {
+
+  padding-top: 0%;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  filter: blur(0px);
+  text-align: center;
+
+}
+.underlayDiv{
+
+  font-size: 4vw;
+  background-position: center;
+  height: 95vh;
+  width: 100%;
+  margin: 10 auto;
+  filter: blur(0px);
+  line-height: 10vh;
+  color: white;
+  font-family: "Phosphate";
+  font-style: italic;
+  letter-spacing: 2px;
+  pointer-events: none;
+
+}
+.descriptionDiv{
+
+  margin-top: 45%;
+  text-align: center;
+  z-index: -1;
+
+}
+.upcomingEvents{
+
+  color: white;
+  height: 100vh;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 10vw;
+  font-family: "Phosphate";
+  text-shadow: black;
+
+}
+.nelsonDiv {
+
+  height: 100vh;
+  padding-bottom: 40px;
+  font-size: 45px;
+  font-family: serif;
+  line-height: 100px;
+  color: #8787FC;
+  opacity: 1;
+  background-image: url("assets/image/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.timmyDiv {
+
+  background-image: url("assets/image/2.jpg");
+  height: 100vh;
+  padding-bottom: 40px;
+  font-size: 45px;
+  font-family: serif;
+  line-height: 100px;
+  color: #8787FC;
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 1s ease-in-out;
+
+}
+.groupDiv {
+  background-image: url("assets/image/3.jpg");
+    height: 100vh;
+    padding-bottom: 40px;
+    font-size: 45px;
+    font-family: serif;
+    line-height: 100px;
+    color: #8787FC;
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*CSS Settings for when screen width < 800px*/
+
+@media only screen and (max-width: 800px) {
+
+
+  .timmyDiv {
+    transition: all 1s ease-in-out;
+    background-position: -450px;
+
+  }
+  .textDiv {
+
+    margin-top: 10vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 50vw;
+
+  }
+
+  .descriptionDiv{
+
+    margin-top: 5%;
+    text-align: center;
+
+  }
+
+}
+@media only screen and (max-width: 990px) {
+  .spheresCanvas{
+
+    padding-left: 0px;
+
+
+  }
+}
+
+</style>
+<!------------------------->
+<!--Interactive BG Script-->
+<!------------------------->
+<script>
+$(document).ready(function(){
+
+//  window.location = "#";
+//  window.scrollTo(0, 0);
+  currentTarget = 1;
+
+});
+//Initialize Vars
+var viewportHeight = $(window).height();
+var scroll = 0;
+var scrollPercent = 0;
+var verbose = false;
+var height = $(document).height();
+
+//on window resize
+$(window).resize(function() {
+
+  viewportHeight = $(window).height();
+  viewportWidth = $(window).width();
+
+});
+
+//on window scroll
+$(window).scroll(function(e){
+
+  scroll = $(window).scrollTop();
+  scrollPercent = scroll * 100 / viewportHeight;
+
+  var height = $(document).height();
+
+  var scrollPercent = Math.round(((scroll) / (viewportHeight)) * 100);
+    /*Scroll State Machine*/
+    if(scrollPercent >= 15 && scrollPercent <= 43 ) {
+      $("body").addClass("bg2")
+
+    } else {
+      $("body").removeClass("bg2");
+    }
+    if(scrollPercent >= 44 && scrollPercent <= 72 ) {
+
+        $("body").addClass("bg3")
+        if(verbose){
+          console.log("a");
+        }
+      }
+      else{
+        $("body").removeClass("bg3");
+      }
+      if(scrollPercent >= 73 && scrollPercent <= 100 ) {
+        $("body").addClass("bg4")
+      }
+      else{
+        $("body").removeClass("bg4");
+      }
+
+});
+
+</script>
+
+<div id="preload">
+
+   <img src="assets/image/1.jpg" width="1" height="1" alt="Image 01">
+   <img src="assets/image/2.jpg" width="1" height="1" alt="Image 02">
+   <img src="assets/image/3.jpg" width="1" height="1" alt="Image 03">
+   <img src="assets/image/4.jpg" width="1" height="1" alt="Image 03">
+   <img src="assets/image/a.jpg" width="1" height="1" alt="Image 01">
+   <img src="assets/image/b.jpg" width="1" height="1" alt="Image 02">
+   <img src="assets/image/c.jpg" width="1" height="1" alt="Image 03">
+   <img src="assets/image/d.jpg" width="1" height="1" alt="Image 03">
+<img src="assets/image/logo.png" width="1" height="1" alt="Image 03">
+
+</div>
+
+</body>
+
+</html>

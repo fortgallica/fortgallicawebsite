@@ -1,0 +1,42 @@
+{
+  "name": "fortgallicawebsite",
+  "version": "0.3.0",
+  "description": "Website for the Fort Gallica art collective",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "@popperjs/core": "^2.10.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.43.4"
+  },
+  "scripts": {
+    "css-lint": "stylelint scss/",
+    "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fortgallica/fortgallicawebsite.git"
+  },
+  "keywords": [
+    "FG",
+    "fortgallica",
+    "art",
+    "art collective",
+    "bootstrap",
+    "gulp",
+    "scss",
+    "sass"
+  ],
+  "author": "Shrag",
+  "contributors": "Milo, 2Hz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fortgallica/fortgallicawebsite/issues"
+  },
+  "homepage": "https://github.com/fortgallica/fortgallicawebsite#readme"
+}

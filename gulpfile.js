@@ -1,6 +1,6 @@
-var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
-var sass        = require('gulp-sass')(require('sass'));
+const gulp         = require('gulp');
+const browserSync  = require('browser-sync').create();
+const sass         = require('gulp-sass')(require('sass'));
 
 gulp.task('sass', ()  => {
     return gulp.src("./sass/*.scss")
@@ -8,7 +8,6 @@ gulp.task('sass', ()  => {
         .pipe(gulp.dest("dist/"))
         .pipe(browserSync.stream());
 });
-
 
 gulp.task('start', gulp.series('sass', function() {
 

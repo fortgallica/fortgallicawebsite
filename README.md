@@ -1,9 +1,10 @@
-FORT GALLICA
+FORT GALLICA 
 _____________
+Universal web app using nuxt.js for serverside rendering
 
 Upcoming features: 
 
-1. Multipage navigation and aesthetic upgrades
+1. Multi-page navigation and aesthetic upgrades
 2. Gallery 
 3. Artists
 4. Event page

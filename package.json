@@ -10,9 +10,6 @@
   },
   "devDependencies": {
     "browser-sync": "^2.27.7",
-    "gulp": "^4.0.2",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.0.0",
     "sass": "^1.43.4"
   },
   "scripts": {
@@ -27,9 +24,7 @@
     "FG",
     "fortgallica",
     "art",
-    "vue",
-    "scss",
-    "sass"
+    "vue"
   ],
   "author": "Shrag",
   "contributors": "Milo, 2Hz",

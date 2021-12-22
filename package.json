@@ -4,17 +4,18 @@
   "description": "Website for the Fort Gallica art collective",
   "main": "index.js",
   "dependencies": {
-    "vue": "^2.6.14",
-    "vue-popperjs": "^2.3.0",
-    "webpack": "^5.65.0"
+    "@nuxt/webpack": "^2.15.8",
+    "nuxt": "^2.13.3",
+    "vue-popperjs": "^2.3.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.27.7",
     "sass": "^1.43.4"
   },
   "scripts": {
-    "css-lint": "stylelint scss/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,7 @@
     "FG",
     "fortgallica",
     "art",
-    "vue"
+    "nuxt.js"
   ],
   "author": "Shrag",
   "contributors": "Milo, 2Hz",

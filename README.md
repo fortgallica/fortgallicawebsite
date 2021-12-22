@@ -1,6 +1,6 @@
 FORT GALLICA 
 _____________
-Universal web app using nuxt.js for serverside rendering
+Universal web app using nuxt.js for server-side rendering
 
 Upcoming features: 
 
